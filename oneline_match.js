@@ -18,14 +18,9 @@ function search(pat, txt) {
 			// We suddently, cannot move on, so need to break and move
 			// to next in big matrix	
 			if(txtArr[i+j] != patArr[j]) {
-				console.log('-- break --');
-				console.log("i: " + i + " " + "j: " + j);
 				break;
 			} else {
-				console.log('-- match --');
-				console.log(txtArr[i+j]);
-				console.log(patArr[j]);
-				console.log("j: " + j + " " + "patLen: " + patLen);
+
 			}
 
 			// We through all pattern
@@ -38,12 +33,12 @@ function search(pat, txt) {
 	}		
 }
 
-/*
 var txt = "AABAACAADAABAAABAA";
 var pat = "AABA";
-*/
 
+/*
 var txt = '12345';
 var pat = '34';
+*/
 
 search(pat, txt);
